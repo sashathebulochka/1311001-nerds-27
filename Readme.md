@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Александра Евграфова](https://up.htmlacademy.ru/htmlcss/27/user/1311001).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Рус](https://htmlacademy.ru/profile/vanillawulf).
 
 ---
 
