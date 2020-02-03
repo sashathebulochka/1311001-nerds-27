@@ -8,7 +8,7 @@
   <body>
 
     <header>
-      <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия Нёрдс"></a>
+      <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс"></a>
 
       <nav>
         <ul>
@@ -26,38 +26,104 @@
     <main>
       <h1>Магазин готовых шаблонов</h1>
 
-      <section>
-        <h2>Фильтры</h2>
-        <!-- Здесь будет красивый фильтр по цене -->
-        <p>Сетка</p>
-        <ul>
-          <li>Адаптивная</li>
-          <li>Фиксированная</li>
-          <li>Резиновая</li>
-        </ul>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтры товаров</h2>
+        
+        <!-- Здесь будет сортировка по цене -->
 
-        <p>Особенности</p>
-        <ul>
-          <li>Адаптивная</li>
-          <li>Фиксированная</li>
-          <li>Резиновая</li>
-        </ul>
+        <form class="filters" method="get" action="">
 
-        <button type="button">Показать</button>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+             <li class="filter-option">
+               <input class="" type="radio" name="product-group" id="filter-adaptivnaya"checked>
+               <label for="filter-adaptivnaya">Адаптивная</label>
+             </li>
+
+             <li class="filter-option">
+               <input class="" type="radio" name="product-group" id="filter-fixirovannaya">
+               <label for="filter-fixirovannaya">Фиксированная</label>
+             </li>
+
+             <li class="filter-option">
+               <input class="" type="radio" name="product-group" id="filter-rezinovaya">
+               <label for="filter-rezinovaya">Резиновая</label>
+             </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="" type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+
+              <li class="filter-option">
+                <input class="" type="checkbox" name="benefits-block" id="filter-benefits-block">
+                <label for="filter-benefits-block">Блок преимуществ</label>
+              </li>
+
+              <li class="filter-option">
+                <input class="" type="checkbox" name="news" id="filter-news">
+                <label for="filter-news">Новости</label>
+              </li>
+
+              <li class="filter-option">
+                <input class="" type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+
+              <li class="filter-option">
+                <input class="" type="checkbox" name="shopping-bag" id="filter-shopping-bag">
+                <label for="filter-shopping-bag">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+
+        <button type="submit">Показать</button>
+
+      </form>
       </section>
 
       <section>
-        <h2>Товары</h2>
+        <h2 class="visually-hidden">Товары</h2>
           <!-- Здесь будет красивая сортировка товаров -->
           <ul>
-            <li><img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona"></li>
+            <li><img src="img/img-sedona.jpg" width="360" height="576" alt="шаблон Sedona"></li>
             <li><img src="img/img-pink.jpg" width="360" height="576" alt="Pink"></li>
-            <li><img src="img/img-barbershop.jpg" width="360" height="576" alt="Borodincki"></li>
-            <li><img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka"></li>
-            <li><img src="img/img-aplus.jpg" width="360" height="576" alt="Aplus"></li>
-            <li><img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast"></li>
+            <li><img src="img/img-barbershop.jpg" width="360" height="576" alt="шаблон Borodincki"></li>
+            <li><img src="img/img-mishka.jpg" width="360" height="576" alt="шаблон Mishka"></li>
+            <li><img src="img/img-aplus.jpg" width="360" height="576" alt="шаблон Aplus"></li>
+            <li><img src="img/img-kvast.jpg" width="360" height="576" alt="шаблон Kvast"></li>
           </ul>
       </section>
+
+      <section>
+        <h2>Напишите нам</h2>
+        <form action="" method="post">
+          <p>
+            <label for="message-name">Ваше имя:</label>
+            <input id="message-name" type="text" name="name" placeholder="Имя Фамилия" value="">
+          </p>
+
+          <p>
+            <label for="message-email">Ваш e-mail:</label>
+            <input id="message-email" type="text" name="email" placeholder="email@explane.com" value="">
+          </p>
+
+          <p>
+            <label for="message-text">Текст письма:</label>
+            <input id="message-text" type="text" name="comment" placeholder="В свободной форме" value="">
+          </p>
+
+          <button class="button" type="submit">Отправить</button>
+
+        </form>
+      </section>
+
     </main>
 
     <footer>

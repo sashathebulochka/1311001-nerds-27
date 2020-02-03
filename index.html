@@ -8,7 +8,7 @@
   <body>
 
     <header>
-      <img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия Нёрдс">
+      <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
 
       <nav>
         <ul>
@@ -27,28 +27,28 @@
     <main>
       <h1>Дизайн-студия Нёрдс</h1>
 
-      <!-- Здесь будет красивый слайдер когда-нибужь :) -->
+      <!-- Здесь будет красивый слайдер когда-нибудь :) -->
 
       <section>
-        <h2>Услуги</h2>
+        <h2 class="visually-hidden">Услуги</h2>
 
         <ul>
           <li>
-            <img src="img/illustration-1.jpg" width="300" height="146" alt="Иллюстрация услуги">
+            <img src="img/illustration-1.jpg" width="300" height="146" alt="Иллюстрация услуги Веб-сайты">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <button type="button">Заказать</button>
           </li>
 
           <li>
-            <img src="img/illustration-2.jpg" width="300" height="146" alt="Иллюстрация услуги">
+            <img src="img/illustration-2.jpg" width="300" height="146" alt="Иллюстрация услуги Приложения">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
             <button type="button">Заказать</button>
           </li>
 
           <li>
-            <img src="img/illustration-3.jpg" width="300" height="146" alt="Иллюстрация услуги">
+            <img src="img/illustration-3.jpg" width="300" height="146" alt="Иллюстрация услуги Презентации">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
             <button type="button">Заказать</button>
@@ -57,6 +57,28 @@
       </section>
 
         <!-- Здесь будет красивый раздел :) -->
+      <section>
+        <h2>Напишите нам</h2>
+        <form action="" method="post">
+          <p>
+            <label for="message-name">Ваше имя:</label>
+            <input id="message-name" type="text" name="name" placeholder="Имя Фамилия" value="">
+          </p>
+
+          <p>
+            <label for="message-email">Ваш e-mail:</label>
+            <input id="message-email" type="text" name="email" placeholder="email@explane.com" value="">
+          </p>
+
+          <p>
+            <label for="message-text">Текст письма:</label>
+            <input id="message-text" type="text" name="comment" placeholder="В свободной форме" value="">
+          </p>
+
+          <button class="button" type="submit">Отправить</button>
+          
+        </form>
+      </section>
 
     </main>
 
