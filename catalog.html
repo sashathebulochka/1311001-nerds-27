@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -10,73 +13,74 @@
     <header>
       <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс"></a>
 
-      <nav>
-        <ul>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li class="here-we-go"><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul>
+
+        <ul class="shopping-bag">
           <li><a href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>Магазин готовых шаблонов</h1>
+      <h1 class="shop">Магазин готовых шаблонов</h1>
 
-      <section class="filters">
+      <section>
         <h2 class="visually-hidden">Фильтры товаров</h2>
 
         <!-- Здесь будет сортировка по цене -->
 
         <form class="filters" method="get" action="">
 
-          <fieldset>
+          <fieldset class="filter-type">
             <legend>Сетка:</legend>
-            <ul>
-             <li class="filter-option">
+            <ul class="filter-list">
+             <li class="filter-item">
                <input class="" type="radio" name="product-group" id="filter-adaptivnaya"checked>
                <label for="filter-adaptivnaya">Адаптивная</label>
              </li>
 
-             <li class="filter-option">
+             <li class="filter-item">
                <input class="" type="radio" name="product-group" id="filter-fixirovannaya">
                <label for="filter-fixirovannaya">Фиксированная</label>
              </li>
 
-             <li class="filter-option">
+             <li class="filter-item">
                <input class="" type="radio" name="product-group" id="filter-rezinovaya">
                <label for="filter-rezinovaya">Резиновая</label>
              </li>
             </ul>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="options">
             <legend>Особенности:</legend>
-            <ul>
-              <li class="filter-option">
+            <ul class="option-list">
+              <li class="option-item">
                 <input class="" type="checkbox" name="slider" id="filter-slider" checked>
                 <label for="filter-slider">Слайдер</label>
               </li>
 
-              <li class="filter-option">
+              <li class="option-item">
                 <input class="" type="checkbox" name="benefits-block" id="filter-benefits-block">
                 <label for="filter-benefits-block">Блок преимуществ</label>
               </li>
 
-              <li class="filter-option">
+              <li class="option-item">
                 <input class="" type="checkbox" name="news" id="filter-news">
                 <label for="filter-news">Новости</label>
               </li>
 
-              <li class="filter-option">
+              <li class="option-item">
                 <input class="" type="checkbox" name="gallery" id="filter-gallery">
                 <label for="filter-gallery">Галерея</label>
               </li>
 
-              <li class="filter-option">
+              <li class="option-item">
                 <input class="" type="checkbox" name="shopping-bag" id="filter-shopping-bag">
                 <label for="filter-shopping-bag">Корзина</label>
               </li>
@@ -126,16 +130,16 @@
 
     </main>
 
-    <footer>
+    <footer class="main-footer">
 
-      <ul>
+      <ul class="socialmedia-list">
         <li><a href="#">Вконтакте</a></li>
         <li><a href="#">Facebook</a></li>
         <li><a href="#">Instagram</a></li>
       </ul>
 
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <p class="call-to-action">Давайте дружить, это выгодно!</p>
+      <p class="text-sale">Скидка 10% для друзей из социальных сетей.</p>
 
     </footer>
   </body>
