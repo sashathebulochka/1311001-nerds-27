@@ -106,6 +106,7 @@ button:active {
 
 .services-item h3 {
   font-size: 24px;
+  line-height: 30px;
   color: black;
   text-transform: uppercase;
 }
@@ -149,7 +150,7 @@ button:active {
   color: black;
 }
 
-.popup p {
+.popup div {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
@@ -185,6 +186,7 @@ button:active {
 
 .shop {
   font-size: 55px;
+  line-height: 55px;
   color: black;
 }
 
@@ -195,6 +197,7 @@ button:active {
 .filter-type legend {
   font-size: 18px;
   font-weight: 700;
+  line-height: 30px;
   color: black;
   text-transform: uppercase;
 }
@@ -214,6 +217,7 @@ button:active {
 .options legend {
   font-size: 18px;
   font-weight: 700;
+  line-height: 30px;
   color: black;
   text-transform: uppercase;
 }
@@ -268,9 +272,11 @@ button:active {
 .call-to-action {
   font-size: 36px;
   font-weight: 700;
+  line-height: 35px;
   color: black;
 }
 
 .text-sale p {
+  line-height: 22px;
   color: #444444
 }
