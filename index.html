@@ -10,12 +10,15 @@
 
   <body>
 
-    <header>
-      <div class="logo">
-       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-      </div>
+    <header class="main-header">
 
       <nav class="main-navigation">
+        <div class="container">
+
+        <div class="logo">
+         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+        </div>
+
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
@@ -26,18 +29,23 @@
         <ul class="shopping-bag">
           <li><a href="#">Корзина</a></li>
         </ul>
+
+      </div>
       </nav>
+
+      <!-- Здесь будет красивый слайдер когда-нибудь :) -->
+
     </header>
 
     <main>
-      <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
 
-      <!-- Здесь будет красивый слайдер когда-нибудь :) -->
+      <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
 
       <section>
         <h2 class="visually-hidden">Услуги</h2>
 
         <ul class="services-list">
+          <div class="container">
           <li class="services-item">
             <img src="img/illustration-1.jpg" width="300" height="146" alt="Иллюстрация услуги Веб-сайты">
             <h3>Веб-сайты</h3>
@@ -59,9 +67,15 @@
             <button type="button" class="services-button-3">Заказать</button>
           </li>
         </ul>
+      </div>
       </section>
 
-        <!-- Здесь будет красивый раздел :) -->
+
+      <!-- Здесь будет красивый раздел :) -->
+
+
+      <!-- Пока закомменчу форму, раз её нет в задании
+
       <section>
         <div class="popup">
         <h2>Напишите нам</h2>
@@ -86,19 +100,24 @@
         </form>
         <div>
       </section>
+      -->
 
     </main>
 
     <footer class="main-footer">
 
+      <div class="container">
       <ul class="socialmedia-list">
         <li><a href="#">Вконтакте</a></li>
         <li><a href="#">Facebook</a></li>
         <li><a href="#">Instagram</a></li>
       </ul>
 
-      <p class="call-to-action">Давайте дружить, это выгодно!</p>
-      <p class="text-sale">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-tagline">
+        <p class="call-to-action">Давайте дружить, это выгодно!</p>
+        <p class="text-sale">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
 
     </footer>
   </body>

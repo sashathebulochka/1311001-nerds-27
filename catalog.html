@@ -10,10 +10,15 @@
 
   <body>
 
-    <header>
-      <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс"></a>
+    <header class="header-catalog">
 
       <nav class="main-navigation">
+        <div class="container">
+
+        <div class="logo">
+         <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс"></a>
+        </div>
+
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
@@ -24,17 +29,24 @@
         <ul class="shopping-bag">
           <li><a href="#">Корзина</a></li>
         </ul>
+
+      </div>
       </nav>
+
+      <div class="container">
+        <h1 class="shop">Магазин готовых шаблонов</h1>
+      </div>
+
     </header>
 
     <main>
-      <h1 class="shop">Магазин готовых шаблонов</h1>
 
       <section>
         <h2 class="visually-hidden">Фильтры товаров</h2>
 
         <!-- Здесь будет сортировка по цене -->
 
+        <div class="container">
         <form class="filters" method="get" action="">
 
           <fieldset class="filter-type">
@@ -90,9 +102,12 @@
         <button type="submit">Показать</button>
 
       </form>
+      </div>
+
       </section>
 
-      <section>
+
+      <section class="products">
         <h2 class="visually-hidden">Товары</h2>
           <!-- Здесь будет красивая сортировка товаров -->
           <ul>
@@ -104,6 +119,8 @@
             <li><img src="img/img-kvast.jpg" width="360" height="576" alt="шаблон Kvast"></li>
           </ul>
       </section>
+
+      <!-- Пока закомменчу форму, раз её нет в задании
 
       <section>
         <div class="popup">
@@ -129,19 +146,24 @@
         </form>
         <div>
       </section>
+      -->
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="footer-catalog">
 
+      <div class="container">
       <ul class="socialmedia-list">
         <li><a href="#">Вконтакте</a></li>
         <li><a href="#">Facebook</a></li>
         <li><a href="#">Instagram</a></li>
       </ul>
 
-      <p class="call-to-action">Давайте дружить, это выгодно!</p>
-      <p class="text-sale">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-tagline">
+        <p class="call-to-action">Давайте дружить, это выгодно!</p>
+        <p class="text-sale">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
 
     </footer>
   </body>
