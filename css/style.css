@@ -249,6 +249,11 @@ button:active {
   justify-content: center;
 }
 
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .shop {
   margin-top: 81px;
 
@@ -257,10 +262,11 @@ button:active {
   color: black;
 }
 
-.filters .container {
+/*.filters .container {
   display: flex;
   flex-direction: row;
 }
+*/
 
 .filter-type {
   order: 1;
@@ -336,7 +342,16 @@ button:active {
   color: rgba(0, 0, 0, 0.302);
 }
 
+.products ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 760px;
+  justify-content: space-between;
+}
+
 .products li {
+  margin-bottom: 33px;
+
   list-style: none;
 }
 
