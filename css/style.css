@@ -68,7 +68,7 @@ button:active {
 }
 
 .header-catalog {
-  min-height: 355px;
+  height: 355px;
   margin: 0;
 
   background-color: #eeeeee;
@@ -180,6 +180,103 @@ button:active {
 .here-we-go {
   border-bottom: 2px solid #fb565a;
   width: 74px;
+}
+
+.slider {
+  position: relative;
+
+  padding-top: 18px;
+}
+
+.slide-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slide-title {
+  min-width: 390px;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.slide-text {
+  height: 65px;
+
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+}
+
+.slide-button {
+  display: inline-block;
+  padding: 18px 54px 18px 54px;
+  margin: 0;
+  margin-bottom: 80px;
+
+  font: inherit;
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+  border-radius: 3px;
+
+  cursor: pointer;
+}
+
+.slide-button:hover,
+.slide-button:focus {
+  background-color: #e74246;
+
+  cursor: pointer;
+}
+
+.slide-button:active {
+  box-shadow: 0 3px 0px 0px #c53d41 inset;
+  color: rgba(255, 255, 255, 0.302);
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  margin-right: 17px;
+
+  vertical-align: top;
+
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .services-list {
