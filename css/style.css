@@ -61,7 +61,9 @@ button:active {
 }
 
 .main-header {
+  position: relative;
   min-height: 545px;
+  margin: 0;
   margin-bottom: 80px;
 
   background-color: #eeeeee;
@@ -183,16 +185,17 @@ button:active {
 }
 
 .slider {
-  position: relative;
+  height: 431px;
+  width: 1160px;
 
-  padding-top: 18px;
+  position: absolute;
+  top: 132px;
 }
 
 .slide-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .slider-list {
@@ -258,7 +261,7 @@ button:active {
 .slider-controls {
   position: absolute;
   bottom: 100px;
-  left: 0;
+  left: 580px;
   z-index: 20;
 
   font-size: 0;
@@ -347,6 +350,131 @@ button:active {
 .services-button-3:active {
   box-shadow: 0 3px 0px 0px #d29f32 inset;
   color: rgba(255, 255, 255, 0.302);
+}
+
+.about-studio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-studio h2 {
+  font: inherit;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 600;
+  color: black;
+
+  max-width: 661px;
+  margin: 0;
+  margin-top: 80px;
+  margin-bottom: 35px;
+}
+
+.about-studio p {
+  font: inherit;
+  font-size: 16px;
+  line-height: 24px;
+
+  max-width: 660px;
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.about-studio h4 {
+  font: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+
+  max-width: 660px;
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.about-studio li {
+  list-style: none;
+  padding: 0;
+
+  position: relative;
+}
+
+.about-studio li::before{
+  content: "";
+
+  position: absolute;
+  top: 11px;
+  left: -40px;
+
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+
+}
+
+.about-studio-2nd-column {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  width: 360px;
+}
+
+.about-studio img {
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.list-of-benefits {
+  display: flex;
+}
+
+.list-of-benefits-item {
+  display: flex;
+  flex-wrap: wrap;
+
+  max-width: 106px;
+
+  margin: 0;
+  margin-right: 25px;
+}
+
+.about-studio .percent {
+  font: inherit;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: black;
+
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.about-studio .percent-description {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0;
+  margin-top: 46px;
+  margin-bottom: 46px;
+}
+
+.clients img {
+  opacity: 0.2;
+}
+
+.clients img:hover {
+  opacity: 100%;
 }
 
 .popup {
@@ -998,6 +1126,13 @@ button:active {
   height: 50px;
 }
 
+.map {
+  height: 416px;
+  width: auto;
+
+  background-color: black;
+}
+
 .main-footer {
   background-color: white;
   min-height: 217px;
@@ -1049,7 +1184,7 @@ button:active {
   box-shadow: 0 3px 0px 0px #c53d41 inset;
 }
 
-.social-button svg:active {
+.social-button:active svg{
   opacity: 0.3;
 }
 
